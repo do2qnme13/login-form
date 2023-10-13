@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login Form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="imgdiv">
+      <div class="intro">
+        <h1>Welcome to Anime World</h1>
+      </div>
+    </div>
+    <div class="hero">
+      <div class="info">
+        <h2>Your<span> New Anime World</span> is waiting for you.Meet and make new friend with other players to explore this vast world!</h2>
+        <p>Sign up now to get started.</p>
+      </div>
+      <div class="form">
+        <form>
+          <div class="formElementDiv">
+            <label for="userName">User Name</label>
+            <input id="userName" name="userName" type="text" placeholder="Enter User Name" required>
+          </div>
+
+          <div class="formElementDiv">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="Enter Your Password" required
+            pattern="[A-Za-z0-9]{8,}">
+            <p class="pwd">Must be at least 8 characters.</p>
+          </div>
+
+          <div class="formElementDiv">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="example@gmail.com" required 
+            pattern="([A-Za-z0-9._+-]+@[A-za-z0-9 -]+\.[a-z]{2,4})\w+">  
+          </div>
+
+          <div class="formElementDiv">
+            <button type="submit">Create Account</button>
+            <button type="reset">Reset</button>
+          </div>         
+          
+
+
+        </form>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </div>
+</body>
+</html>
